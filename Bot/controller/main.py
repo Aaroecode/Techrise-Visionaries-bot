@@ -8,6 +8,8 @@ intents = discord.Intents.all()
 
 Bot = commands.Bot(command_prefix="t!", intents=intents)
 
+@Bot.event
+
 
 
 
