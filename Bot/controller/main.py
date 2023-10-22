@@ -19,6 +19,8 @@ async def on_ready():
             except:
                 pass
     roles(Bot, Config.server_name)
+
+
     
         
 
