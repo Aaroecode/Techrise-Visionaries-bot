@@ -12,6 +12,7 @@ config_file = os.path.join(os.getcwd(), 'config.ini')
 def create_config():
     conf["Server"] = {}
     conf["Server"]["Name"] = "Your Server Name"
+    conf["Server"]["Member_role"] = "ID/Name of Member's Role that will be assigned to new members"
 
     with open(config_file, "w") as f:
         conf.write(f)
@@ -26,7 +27,7 @@ class Config():
         create_config()
     
     try:
-        server_name = conf["Server"]["Name"]
+        server = conf["Server"]
     except KeyError:
         pass
 
