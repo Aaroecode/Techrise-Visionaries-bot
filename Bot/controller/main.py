@@ -1,5 +1,7 @@
 from discord.ext import commands
 from dotenv import load_dotenv
+from Bot.utils.role_manager import roles
+from Bot.config.config import Config
 import discord, os
 
 load_dotenv()
@@ -16,6 +18,8 @@ async def on_ready():
                 await Bot.load_extensions(f"Bot.cogs.{files[:-3]}")
             except:
                 pass
+    roles(Bot, Config.server_name)
+    
         
 
     

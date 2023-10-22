@@ -10,7 +10,7 @@ class roles():
         self.client = client
         self.guild = guild
     
-    async def add_role(self, role: Union[str, int, discord.role()], user: Union[int, discord.user()], exist_ok: bool = False):
+    async def add_role(self, role: Union[str, int, discord.Role], user: Union[int, discord.User], exist_ok: bool = False):
         if isinstance(role, str):
             fetched_role = discord.utils.get(self.guild.roles, name= role)
         
@@ -27,7 +27,7 @@ class roles():
             raise errors.UserNotFound(user)
         await fetched_user.add_roles(role)
     
-    async def remove_role(self, role: Union[str, int, discord.role()], user: Union[int, discord.user()]):
+    async def remove_role(self, role: Union[str, int, discord.Role], user: Union[int, discord.User]):
         if isinstance(role, str):
             fetched_role = discord.utils.get(self.guild.roles, name= role)
         
