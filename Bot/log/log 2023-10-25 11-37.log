@@ -1,0 +1,8 @@
+10/25/2023 11:37:02 - WARNING - discord.client -   PyNaCl is not installed, voice will NOT be supported
+10/25/2023 11:37:02 - DEBUG - discord.client -   on_ready has successfully been registered as an event
+10/25/2023 11:37:02 - DEBUG - asyncio -   Using proactor: IocpProactor
+10/25/2023 11:37:02 - INFO - discord.client -   logging in using static token
+10/25/2023 11:37:05 - INFO - discord.gateway -   Shard ID None has connected to Gateway (Session ID: cb03367d7af6560af3f4ec50f0ae7ece).
+10/25/2023 11:37:07 - INFO - BOT -   Bot loaded extensions on_join_handler.py
+10/25/2023 11:37:07 - INFO - BOT -   Bot loaded extensions presence_manager.py
+10/25/2023 11:37:07 - ERROR - BOT -   Extension 'Bot.cogs.__init__' has no 'setup' function.

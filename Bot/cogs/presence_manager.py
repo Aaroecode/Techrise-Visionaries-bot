@@ -39,6 +39,8 @@ class Presence(commands.Cog):
                 await ctx.send(f"{value} is not a valid")
         else:
             await ctx.send("Invalid method")
+        self.status = cycle(self.status_list)
+        self.change_presence.restart()
 
 
 

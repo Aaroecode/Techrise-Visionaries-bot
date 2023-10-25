@@ -20,7 +20,7 @@ async def on_ready():
                 bot_logger.info(f"Bot loaded extensions {files}")
             except Exception as e:
                 bot_logger.error(e)
-    await Presence.change_presence.start()
+    await Presence(Bot).change_presence.start()
                 
     
 
