@@ -21,15 +21,15 @@ def create_config():
 class Config():
     bot_logger = get_logger("BOT")
     try:
-        with open(config_file, "r") as f:
-            conf.read(f)
+        conf.read(config_file)
     except FileNotFoundError:
         create_config()
     
     try:
-        server = conf["Server"]
+        server  = conf['Server']
     except KeyError:
         pass
+    
 
 
     
